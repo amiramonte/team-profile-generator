@@ -17,7 +17,6 @@
 // THEN I exit the application, and the HTML is generated
 // 
 // 
-// create classes
 // create employee parent class
     // refer to readme
     // run tests to make them pass
@@ -35,12 +34,16 @@
     // run tests and make pass
 
 // 
-// 
-// 
-// 
-// 
-// 
-// 
+// Inquirer question asking what type of employee with selection
+// depending on selection - navigate to inquirer question set that covers Employee class and additional subclass requirements
+    // Question set for Employee
+    // question set for manager
+    // question set for Engineer
+    // question set for intern
+// Inquirer question asking if done or selecting another employee 
+// take information from Inquirer questions and put into generateTeam const in generateHtml.js
+// import team to index.js
+// put team from generateHtml.js into write file function where pushes file to OUTPUT folder in directory
 // 
 // 
 // 
