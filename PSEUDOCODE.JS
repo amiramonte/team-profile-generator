@@ -17,22 +17,6 @@
 // THEN I exit the application, and the HTML is generated
 // 
 // 
-// create employee parent class
-    // refer to readme
-    // run tests to make them pass
-
-// create manager class extending employee class
-    // refer to readme for needed
-    // run tests to make them pass
-
-// create engineer class extending employee class
-    // refer to readme
-    // run tests and make pass
-
-// create intern class extending employee class
-    // refer to readme
-    // run tests and make pass
-
 // 
 // Inquirer question asking what type of employee with selection
 // depending on selection - navigate to inquirer question set that covers Employee class and additional subclass requirements
