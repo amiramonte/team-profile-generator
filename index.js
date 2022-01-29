@@ -29,19 +29,19 @@ async function init() {
             console.log("Manager selected!")
             // execute manager questions
             // push information to large array that is going to be pushed into the generateHtml file
-            // return to beginning by invoking init();
+            init();
             break;
         case "Engineer":
             console.log("Engineer selected!")
             // execute engineer quesions
             // push information to large array that is going to be pushed into the generateHtml file
-            // return to beginning by invoking init();
+            init();
             break;
         case "Intern":
             console.log("Intern selected!")
             // execute intern questions
             // push information to large array that is going to be pushed into the generateHtml file
-            // return to beginning by invoking init();
+            init();
             break;
         case "None":
             console.log("Thank you for your input! Please wait while we create your file.")
