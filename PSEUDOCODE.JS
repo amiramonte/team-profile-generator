@@ -17,8 +17,6 @@
 // THEN I exit the application, and the HTML is generated
 // 
 // 
-// run test to make sure everything failing and getting that response
-// push to git hub
 // create classes
 // create employee parent class
     // refer to readme
