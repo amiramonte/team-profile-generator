@@ -17,8 +17,6 @@
 // THEN I exit the application, and the HTML is generated
 // 
 // 
-// change file structure so no develop folder and git push pseudocode file
-// install inquirer and jest
 // run test to make sure everything failing and getting that response
 // push to git hub
 // create classes
