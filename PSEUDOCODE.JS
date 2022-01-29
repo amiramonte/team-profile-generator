@@ -18,7 +18,6 @@
 // 
 // 
 // 
-// Inquirer question asking what type of employee with selection
 // depending on selection - navigate to inquirer question set that covers Employee class and additional subclass requirements
     // Question set for Employee
     // question set for manager
