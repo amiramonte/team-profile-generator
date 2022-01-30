@@ -5,51 +5,61 @@ const fs = require('fs');
 
 const generateHtml = require("./util/generateHtml");
 
-const employee = require('./lib/Employee');
-const manager = require('./lib/Manager');
-const engineer = require('./lib/Engineer');
-const intern = require('./lib/Intern');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
+const {starterQuestion, managerQuestions, engineerQuestions, internQuestions} = require('./questions');
+
+// declaring variables
+const teamArray = [];
 
 
-const starterQuestion = [
-    {
-        type: 'list',
-        choices: ['Manager', 'Engineer', 'Intern', 'None'],
-        message: 'What type of employee would you like to add?',
-        name: 'choice'
-    }
-]
 
+// define functions
 async function init() {
-    const response = await inquirer.prompt(starterQuestion);
-    console.log(response);
-    switch (response.choice) {
+    const {choice} = await inquirer.prompt(starterQuestion);
+    switch (choice) {
         case "Manager":
             console.log("Manager selected!")
-            // execute manager questions
-            // push information to large array that is going to be pushed into the generateHtml file
-            init();
-            break;
+            return addManager();
         case "Engineer":
             console.log("Engineer selected!")
-            // execute engineer quesions
-            // push information to large array that is going to be pushed into the generateHtml file
-            init();
-            break;
+            return addEngineer();
         case "Intern":
             console.log("Intern selected!")
-            // execute intern questions
-            // push information to large array that is going to be pushed into the generateHtml file
-            init();
-            break;
-        case "None":
+            return addIntern();
+        case "Build Team":
             console.log("Thank you for your input! Please wait while we create your file.")
-            // take information entered into array from above choices and push to generateHtml file
-            // fs.writefile for new html page and send to 'OUTPUT' folder in directory
+            return buildTeam();
         default:
-            
             break;
     }
 }
 
 init();
+
+
+async function addManager() {
+    const {name, id, email, officeNumber} = await inquirer.prompt(managerQuestions);
+    const manager = new Manager(name, id, email, officeNumber)
+    teamArray.push(manager);
+    init();
+}
+
+async function addEngineer() {
+    const {name, id, email, github} = await inquirer.prompt(engineerQuestions);
+    const engineer = new Engineer(name, id, email, github)
+    teamArray.push(engineer);
+    init();
+}
+
+async function addIntern() {
+    const {name, id, email, school} = await inquirer.prompt(internQuestions);
+    const intern = new Intern(name, id, email, school)
+    teamArray.push(intern);
+    init();
+}
+
+function buildTeam() {
+    fs.writeFileSync('./output/index.html', generateHtml(teamArray))
+}

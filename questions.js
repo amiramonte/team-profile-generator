@@ -1,26 +1,33 @@
-const inquirer = require('inquirer');
+const starterQuestion = [
+    {
+        type: 'list',
+        choices: ['Manager', 'Engineer', 'Intern', 'Build Team'],
+        message: 'What type of employee would you like to add?',
+        name: 'choice'
+    }
+]
 
 
 const managerQuestions = [
     {
         type: 'input',
         message: 'What is your Manager name?',
-        name: 'engineerName',
+        name: 'name',
     },
     {
         type: 'input',
         message: 'What is your Manager Id number?',
-        name: 'managerId',
+        name: 'id',
     },
     {
         type: 'input',
         message: 'What is your Manager email address?',
-        name: 'managerEmail',
+        name: 'email',
     },
     {
         type: 'input',
         message: 'What is your Manager office number?',
-        name: 'managerOfficeNumber',
+        name: 'officeNumber',
     },
 ]
 
@@ -28,50 +35,55 @@ const managerQuestions = [
 const engineerQuestions = [
     {
         type: 'input',
-        message: 'What is your Intern name?',
-        name: 'engineerName',
+        message: 'What is your Engineer name?',
+        name: 'name',
     },
     {
         type: 'input',
         message: 'What is your Engineer Id number?',
-        name: 'engineerId',
+        name: 'id',
     },
     {
         type: 'input',
         message: 'What is your Engineer email address?',
-        name: 'engineerEmail',
+        name: 'email',
     },
     {
         type: 'input',
         message: 'What is your Engineer Github username?',
-        name: 'engineerGithub',
+        name: 'github',
     },
 ]
 
 
-const InternQuestions = [
+const internQuestions = [
     {
         type: 'input',
         message: 'What is your Intern name?',
-        name: 'internName',
+        name: 'name',
     },
     {
         type: 'input',
         message: 'What is your Intern Id number?',
-        name: 'internId',
+        name: 'id',
     },
     {
         type: 'input',
         message: 'What is your Intern email address?',
-        name: 'internEmail',
+        name: 'email',
     },
     {
         type: 'input',
         message: 'What school does your Intern currently attend?',
-        name: 'internSchool',
+        name: 'school',
     },
 ]
 
 
 
-module.exports
+module.exports = {
+    starterQuestion,
+    managerQuestions,
+    engineerQuestions,
+    internQuestions,
+}
