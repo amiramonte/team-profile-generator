@@ -29,7 +29,7 @@ async function init() {
             console.log("Intern selected!")
             return addIntern();
         case "Build Team":
-            console.log("Thank you for your input! Please wait while we create your file.")
+            console.log("Thank you for your input! Please wait while we create your team file.")
             return buildTeam();
         default:
             break;
