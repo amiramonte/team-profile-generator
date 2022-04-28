@@ -4,7 +4,6 @@
 
 - [Description](#description)
 - [Functionality](#functionality)
-- [Deployed Application](#deployed-application)
 - [Technologies](#technologies)
 - [Installation](#installation)
 - [Credits](#credits)
@@ -30,13 +29,7 @@ All of these skills were used to create a Team Member Profile Generator created 
 
 ## Functionality
 
-[This link will redirect to a video demonstrating functionality](https://drive.google.com/file/d/1asVU1CIKMdR4kY2S6N5TFeMTXI1ZYQHh/view)
-
----
-
-## Deployed Application
-
-![This screen shot represents a mock up of the finished product](./assets/oop-team-member-generator.png)
+![This screen shot represents a mock up of the finished product](./Assets/oop-team-member-generator.png)
 
 ---
 
@@ -48,6 +41,7 @@ Project is created with:
 - [Bootstrap](https://getbootstrap.com/)
 - [Node.js](https://nodejs.org/)
 - [Inquirer.js](https://www.npmjs.com/package/inquirer)
+- [Jest.js](https://jestjs.io/)
 
 ---
 
