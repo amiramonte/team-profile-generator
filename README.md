@@ -35,8 +35,6 @@ All of these skills were used to create a Team Member Profile Generator created 
 
 ## Technologies
 
-Project is created with:
-
 - [JavaScript](https://www.javascript.com/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Node.js](https://nodejs.org/)
