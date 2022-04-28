@@ -3,10 +3,10 @@
 ## Table of contents
 
 - [Description](#description)
-- [Technologies](#technologies)
 - [Functionality](#functionality)
-- [Screen Shot](#screen-shot)
-- [Deployment](#deployment)
+- [Deployed Application](#deployed-application)
+- [Technologies](#technologies)
+- [Installation](#installation)
 - [Credits](#credits)
 
 ---
