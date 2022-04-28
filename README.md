@@ -12,18 +12,7 @@
 
 ## Description
 
-This project was built to help reinforce the following skills:
-
-- Command Line Interface manipulation
-- Node.js
-- Inquirer
-- Jest
-- Object Oriented Programming
-- Object destructuring
-- Exporting and Importing
-- File directory Management
-
-All of these skills were used to create a Team Member Profile Generator created and populated through the terminal or comman line interface.
+This application is a team member profile generator. The team member's profile is created through the command line interface with Node.js, Inquirer.js and uses a test suite from Jest.js. Object Oriented Programming was utilized in the creation of the employee classes and their related information. Once the required information is entered into the command line interface, the application will create an html file that contains all the employee information, organized into tiles. 
 
 ---
 
