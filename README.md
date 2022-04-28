@@ -28,6 +28,18 @@ All of these skills were used to create a Team Member Profile Generator created 
 
 ---
 
+## Functionality
+
+[This link will redirect to a video demonstrating functionality](https://drive.google.com/file/d/1asVU1CIKMdR4kY2S6N5TFeMTXI1ZYQHh/view)
+
+---
+
+## Deployed Application
+
+![This screen shot represents a mock up of the finished product](./assets/oop-team-member-generator.png)
+
+---
+
 ## Technologies
 
 Project is created with:
@@ -35,21 +47,11 @@ Project is created with:
 - [JavaScript](https://www.javascript.com/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Node.js](https://nodejs.org/)
+- [Inquirer.js](https://www.npmjs.com/package/inquirer)
 
 ---
 
-## Functionality
-[This link will redirect to a video demonstrating functionality](https://drive.google.com/file/d/1asVU1CIKMdR4kY2S6N5TFeMTXI1ZYQHh/view)
-
----
-
-## Screen Shot
-
-![This screen shot represents a mock up of the finished product](./assets/oop-team-member-generator.png)
-
----
-
-## Deployment
+## Installation
 
 - Copy the repository from Github
 - On your local machine, through your terminal, navigate to the folder you would like to store this repo in
@@ -63,7 +65,7 @@ Project is created with:
 ---
 
 ## Credits
-  
+
 #### Alex Miramontes - Jr. Web Developer
 
 [Github](https://www.github.com/amiramonte)
